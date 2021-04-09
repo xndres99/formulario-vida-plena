@@ -1,0 +1,202 @@
+<div class="container-sm">
+    <h1 class="titulo">VIVIR PLENAMENTE DESPUES DE VENCER EL COVID</h1>
+    <h2 class="subtitulo">PLAN DE RECUPERACION ACTIVA POST COVID</h2>
+
+    <form method='POST' action='/new-contact' class="tamañoForm">
+        <legend class="subIndice">Formulario de datos previos</legend>
+        <label>Al fin de recomendarle el plan adecuado que se adapta mejor a su situacion, por favor solicitamos llenar
+            el siguiente formulario:</label>
+        <label class="subIndice">Nombre Completo:</label>
+        <div class="mb-3">           
+            <input type="text" class="form-control" name="nombre" id="nombre"
+                placeholder="Nombre"
+                style="background: transparent; border: none; border-bottom: 1px solid #000;">
+        </div>
+        <label class="subIndice">E-mail:</label>
+        <div class="mb-3">           
+            <input type="email" class="form-control" name="E-mail" id="E-mail"
+                placeholder="E-mail"
+                style="background: transparent; border: none; border-bottom: 1px solid #000;">
+        </div>
+        <label class="subIndice">Numero de Celular:</label>
+        <div class="mb-3">           
+            <input type="number" class="form-control" name="celular" id="celular"
+                placeholder="Celular"
+                style="background: transparent; border: none; border-bottom: 1px solid #000;">
+        </div>
+        <label class="subIndice">Edad:</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="edad" id="edad15-25" value="15-25">
+            <label class="form-check-label" for="edad15-25">Entre 15 a 25 años</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="edad" id="edad26-45" value="26-45">
+            <label class="form-check-label" for="edad26-45">Entre 26 a 45 años</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="edad" id="edad46-60" value="46-60">
+            <label class="form-check-label" for="edad46-60">Entre 46 a 60 años</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="edad" id="mas60" value="60+">
+            <label class="form-check-label" for="mas60">Mayor de 60 años</label>
+        </div>
+
+        <label class="subIndice">Sexo:</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sexo" id="sexoF" value="femenino">
+            <label class="form-check-label" for="sexoF">Femenino.</label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="sexo" id="sexoM" value="masculino">
+            <label class="form-check-label" for="sexoM">Masculino.</label>
+        </div>
+
+        <label class="subIndice">¿Tipo de atencion que recibio para el traatamiento COVID?</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="atencionAmbu" name="tratamiento" value="leve">
+            <label class="form-check-label" for="atencionAmbu">
+                Ambulatorio, no fue necesario internacion hospitalaria.
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="atencionInternacion" name="tratamiento" value="medio">
+            <label class="form-check-label" for="atencionInternacion">
+                Internacion hospitalaria sin requerir Terapia intensiva.
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="atencionTerapiaI" name="tratamiento" value="complicado">
+            <label class="form-check-label" for="atencionTerapiaI">
+                Internacion en servicio de Terapia intensiva.
+            </label>
+        </div>
+
+        <label class="subIndice">Fechas a conciderar:</label>
+        <div>
+            <label> Fecha de prueba positiva de covid: </label><br />
+            <input type="date" name="fecha" id="fecha+" class="fecha" value="<?php $fcha = date("Y-m-d")";?>
+        </div>
+        <div>
+            <label> Fecha de internacion:</label><br />
+            <input type="date" name="fecha" id="fechaI"  class="fecha" value="<?php $fcha = date("Y-m-d")";?>
+        </div>
+        <div>
+            <label> Fecha de alta medica:</label><br />
+            <input type="date" name="fecha" id="fechaA" class="fecha" value="<?php $fcha = date("Y-m-d")";?>
+        </div>
+        <div>
+            <label>Fecha de laboratorio negativa:</label><br />
+            <input type="date" name="fecha" id="fechaN" class="fecha" value="<?php $fcha = date("Y-m-d")";?>
+        </div>
+
+        <label class="subIndice">Antecedentes de enfermedades</label>
+        <div class="mb-3">
+            <label for="enfOsteo" class="form-label">Enfermedad osteoartuculares:</label>
+            <input type="text" class="form-control" name="tipoEnfer" id="enfOsteo"
+                placeholder="Enfermedad osteoartuculares"
+                style="background: transparent; border: none; border-bottom: 1px solid #000;">
+        </div>
+        <div class="mb-3">
+            <label for="enfCardiacas" class="form-label">Enfermedades Cardiacas:</label>
+            <input type="text" class="form-control" name="tipoEnfer" id="enfCardiacas"
+                placeholder="Enfermedades Cardiacas"
+                style="background: transparent; border: none; border-bottom: 1px solid #000;">
+        </div>
+        <div class="mb-3">
+            <label for="enfPulm" class="form-label">Enfermedades pulmonales:</label>
+            <input type="text" class="form-control" name="tipoEnfer" id="enfPulm" placeholder="Enfermedades pulmonales"
+                style="background: transparent; border: none; border-bottom: 1px solid #000;">
+        </div>
+        <div class="mb-3">
+            <label for="enfNeuro" class="form-label">Enfermedades neurologicas:</label>
+            <input type="text" class="form-control" name="tipoEnfer" id="enfNeuro"
+                placeholder="Enfermedades neurologicas"
+                style="background: transparent; border: none; border-bottom: 1px solid #000;">
+        </div>
+        <div class="mb-3">
+            <label for="enfSInmunologico" class="form-label">Enfermedades sistemicas de tipo inmunologico:</label>
+            <input type="text" class="form-control" name="tipoEnfer" id="enfSInmunologico"
+                placeholder="Enfermedades sistemicas de tipo inmunologico"
+                style="background: transparent; border: none; border-bottom: 1px solid #000;">
+        </div>
+        <div class="mb-3">
+            <label for="enfOtros" class="form-label">Otros:</label>
+            <input type="text" class="form-control" name="tipoEnfer" id="enfOtros" placeholder="Otros"
+                style="background: transparent; border: none; border-bottom: 1px solid #000;">
+        </div>
+        <div class="mb-3">
+            <label for="incapacidadFis" class="form-label">Cuenta actualmente con un tipo de incapacidad fisica:</label>
+            <input type="text" class="form-control" name="tipoEnfer" id="incapacidadFis"
+                placeholder="Incapacidad Fisica"
+                style="background: transparent; border: none; border-bottom: 1px solid #000;">
+        </div>
+
+        <label class="subIndice">Actualmente, hay algun miembro de la familia con el que mantiene contacto directo o
+            frecuente con COVID? :</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="contactoSi" name="contactoCovid" value="si">
+            <label class="form-check-label" for="contactoSi">
+                Si.
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="contactoNo" name="contactoCovid" value="no">
+            <label class="form-check-label" for="contactoNo">
+                No.
+            </label>
+        </div>
+
+        <label class="subIndice">¿Que tipo de servicio le gustaria recibir?</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="domicilio" name="tipoAtencion" value="domicilio">
+            <label class="form-check-label" for="domicilio">
+                A domicilio.
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="consultorio" name="tipoAtencion" value="consultorio">
+            <label class="form-check-label" for="consultorio">
+                En consultorio.
+            </label>
+        </div>
+        <div class="mb-3">
+
+            <input type="text" class="form-control" name="zona" id="zona" placeholder="Zona de su domicilio"
+                style="background: transparent; border: none; border-bottom: 1px solid #000;">
+        </div>
+
+        <label class="subIndice">¿Como considera que el Covid le afecto a su sistema respiratorio?</label>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="respiracionLeve" name="secuelas" value="leve">
+            <label class="form-check-label" for="respiracionLeve">
+                Leve (menos del 10%).
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="respiracionModerado" name="secuelas" value="moderado">
+            <label class="form-check-label" for="respiracionModerado">
+                Moderado (entre 11 a 20%).
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="respiracionSevero" name="secuelas" value="severo">
+            <label class="form-check-label" for="respiracionSevero">
+                Severo (entre 21 a 50%).
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" id="respiracionMuySevero" name="secuelas" value="muySevero">
+            <label class="form-check-label" for="respiracionMuySevero">
+                Muy severo (Mas del 50%).
+            </label>
+        </div>
+
+        <div class="d-grid gap-2">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+
+        </div>
+
+
+    </form>
+</div>

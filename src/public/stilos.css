@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    color: #1d3557;
+    font-weight: bold;
+    
+    
+}
+.titulo{
+    background-color:#1d3557;
+    color:#f1faee;
+    
+   
+    margin: 10px auto;
+    min-width: 340px;
+    max-width: 700px;
+    text-align: center;
+   
+   
+   
+}
+body{
+    background-color:#F1FAEE;
+    
+    
+}
+.subtitulo{
+    
+    color:#E63946;
+    background-color: #f1faee;
+    margin: 5px auto;
+    min-width: 340px;
+    max-width: 700px;
+    font-size: 20px;
+        
+}
+
+.tamañoForm{
+    background-color: rgba(69, 123, 157,.3);
+    margin: 10px auto;
+    min-width: 340px;
+    max-width: 700px;
+    padding-bottom: 500px;
+}
+.subIndice{
+    font-size: 17px;
+    color: #457B9D;
+    font-weight: bolder;
+
+}
+
+.fecha{
+    background: transparent;
+     border: none;
+      border-bottom: 1px solid #000;
+      color: #457B9D; 
+      font-weight: normal;
+}
+
+
