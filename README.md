@@ -1,1 +1,0 @@
-$env:GOOGLE_APPLICATION_CREDENTIALS="C:\Users\Intel\Desktop\paginasWb\formularioWen\saludplena-2e1da-firebase-adminsdk-1020y-17bb7744b4.json"
